@@ -1,5 +1,5 @@
 [build]
-    command = "hugo --gc --minify $URL"
+    command = "hugo --gc --minify"
     publish = "public"
 
 [build.environment]
@@ -10,7 +10,7 @@
     NODE_ENV = "production"
 
 [context.deploy-preview]
-    command = "hugo --gc --minify $DEPLOY_PRIME_URL"
+    command = "hugo --gc --minify"
 
 [context.branch-deploy]
-    command = "hugo --gc --minify $DEPLOY_PRIME_URL"
+    command = "hugo --gc --minify"
