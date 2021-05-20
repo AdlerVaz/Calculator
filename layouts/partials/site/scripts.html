@@ -1,0 +1,5 @@
+{{ $app := resources.Get "js/app.js" | minify | fingerprint }}
+<script id="applicationModule" defer src="{{ $app.Permalink }}" integrity="{{$app.Data.Integrity}}"></script>
+
+{{ $nf := resources.Get "js/noflashbang.js" | minify | fingerprint }}
+<script id="noFlashbangModule" src="{{ $nf.Permalink }}" integrity="{{$nf.Data.Integrity}}"></script>

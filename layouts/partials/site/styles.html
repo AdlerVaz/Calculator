@@ -1,0 +1,5 @@
+{{ $tailwind := resources.Get "sass/tailwind.scss" | toCSS | postCSS | minify | fingerprint  }}
+<link id="tailwindStylesheet" rel="stylesheet" href="{{ $tailwind.Permalink }}" integrity="{{$tailwind.Data.Integrity}}"/>
+
+{{ $app := resources.Get "sass/app.scss" | toCSS | postCSS | minify | fingerprint  }}
+<link id="applicationStylesheet" rel="stylesheet" href="{{ $app.Permalink }}" integrity="{{$app.Data.Integrity}}"/>
