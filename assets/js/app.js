@@ -18,20 +18,4 @@
         target.addEventListener('click',switchTheme)
     }
     themeToggle()
-    function clickBlink(){
-        const jsclickblinks = document.getElementsByClassName('jsclickblink')
-        for(i=0;i<jsclickblinks.length;i++){
-            const target = jsclickblinks[i]
-            target.addEventListener('click',()=>{
-                target.classList.add("text-black")
-                target.classList.add("bg-white")
-                setTimeout(()=>{
-                    target.classList.remove("text-black")
-                    target.classList.remove("bg-white")
-                },100)
-            })
-        }
-    }
-    clickBlink()
-    
 })()
