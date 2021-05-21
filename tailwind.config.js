@@ -1,5 +1,11 @@
 module.exports = {
-  purge: ['./layouts/**/*.html'],
+  purge: {
+    enabled: true,
+    content: ['./layouts/**/*.html'],
+    options: {
+      safelist:['dark']
+    }
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
