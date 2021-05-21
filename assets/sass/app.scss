@@ -3,12 +3,3 @@
 .grid-template-buttons {grid-template: repeat(4, 1fr) / repeat(4, 1fr);}
 .h-button{height: 4rem;}
 .btn-0{grid-column: 1/3;}
-.light{
-  .bg-black{background-color: #fff;}
-  .text-black{color: #fff;}
-  .border-black{border-color: #fff;}
-
-  .bg-white{background-color: #000;}
-  .text-white{color: #000;}
-  .border-white{border-color: #000;}
-}
