@@ -1,0 +1,49 @@
+{{ define "main"}}
+
+<div class="p-4 container mx-auto">
+    <div class="border-2" style="height: 100px;">
+      <div style="height: 20px;margin-bottom: 10px;" class="border-black dark:border-white text-2xl text-right text-gray-500 display-1">0</div>
+      <div style="height: 20px;" class="border-black dark:border-white text-3xl text-right bg-white text-black dark:bg-black dark:text-white display-2">0</div>
+      <div class="border-black dark:border-white text-2xl text-left bg-white text-black dark:bg-black dark:text-white temp-result"></div>
+    </div>
+
+    <div class="border-black dark:border-white border grid grid-template-buttons text-3xl">
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full all-clear">C</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation last-entity-clear">CE</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">%</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">/</button>
+
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full number">7</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">8</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">9</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">x</button>
+      
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  number h-button w-full">4</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">5</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">6</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">-</button>
+
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number h-button w-full">1</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">2</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">3</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">+</button>
+
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  number h-button w-full btn-0">0</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number dot">.</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black equal">=</button>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{{end}}

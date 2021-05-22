@@ -1,0 +1,6 @@
+.container {width: 100%;}
+@media (min-width: 25rem) {.container{max-width: 25rem;}}
+.grid-template-buttons {grid-template: repeat(4, 1fr) / repeat(4, 1fr);}
+.h-button{height: 4rem;}
+.btn-0{grid-column: 1/3;}
+.four-col{grid-column: 1/5;}

@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://discord.gg/5WqRQYVnjX">
-    <img src="Calculator-icon.png" alt="Discord" width="80"/>
+    <img src="/static/Calculator-icon.png" alt="Discord" width="80"/>
   </a>
 </div>
 

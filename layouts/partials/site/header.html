@@ -1,0 +1,11 @@
+<header class="container mx-auto p-4 mt-4 text-2xl">
+    <div class="flex items-center justify-between">
+        <a href="{{ if eq .RelPermalink "/"}} {{ "#" }}{{ else }} {{ "/" }}{{end}}">
+            {{.Site.Title}}         
+        </a>
+        <button id="themeToggle" class="block w-6 h-6 border-white border border-2 animate-pulse">
+        </button><a id=":>" class="animate-spin bg-white absolute"></a>
+    </div>
+</header>
+
+
