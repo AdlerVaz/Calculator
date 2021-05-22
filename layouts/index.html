@@ -1,34 +1,36 @@
 {{ define "main"}}
+
 <div class="p-4 container mx-auto">
-    <div class="flex flex-col items-end justify-center border-black dark:border-white border-2 p-4">
-      <div class="text-gray-500 text-2xl">empty</div>
-      <input id="input" type="number" class="text-3xl text-right w-full bg-white text-black dark:bg-black dark:text-white"></input>
+    <div class="border-2" style="height: 100px;">
+      <div class="text-2xl text-right text-gray-500 display-1">0</div>
+      <div style="height: 20px;" class="text-3xl text-right bg-white text-black dark:bg-black dark:text-white display-2">0</div>
+      <div class="text-2xl text-left bg-white text-black dark:bg-black dark:text-white temp-result"></div>
     </div>
-    <style></style>
+
     <div class="border-black dark:border-white border grid grid-template-buttons text-3xl">
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full">C</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">CE</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">%</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">/</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full all-clear">C</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation last-entity-clear">CE</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">%</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">/</button>
 
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full jsnumkey">7</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">8</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">9</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">*</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black h-button w-full number">7</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">8</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">9</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">*</button>
       
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  jsnumkey h-button w-full">4</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">5</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">6</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black ">-</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  number h-button w-full">4</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">5</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">6</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">-</button>
 
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey h-button w-full">1</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">2</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black jsnumkey">3</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">+</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number h-button w-full">1</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">2</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number">3</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black operation">+</button>
 
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  jsnumkey h-button w-full btn-0">0</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">.</button>
-        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black">=</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black  number h-button w-full btn-0">0</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black number dot">.</button>
+        <button class="border-black dark:border-white border active:bg-black active:text-white dark:active:bg-white dark:active:text-black equal">=</button>
       
     </div>
   </div>
